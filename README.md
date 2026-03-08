@@ -370,11 +370,15 @@ git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp
 cmake -B build -DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=86
 cmake --build build -j$(nproc)
 
-# ── MODEL ─────────────────────────────────────────────────────
-huggingface-cli download \
-  TeichAI/Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-GGUF \
-  Qwen3-14B-Claude-4.5-Opus-High-Reasoning-Distill-IQ4_NL.gguf \
-  --local-dir ~/models/qwen3-14b-reasoning
+# ── INSTALARE MODEL ─────────────────────────────────────────────────────
+LLAMA_CACHE=~/models llama-server \
+           -hf model/model:quantatizare \
+           --host 0.0.0.0 \
+             --port 8080 \
+             --n-gpu-layers 999 \
+             --ctx-size 8192 \
+             --threads 8 \
+             --parallel 2
 
 # ── SERVER ────────────────────────────────────────────────────
 llama-server \
@@ -387,7 +391,6 @@ curl http://localhost:8080/health         # verifică server
 curl http://localhost:8080/v1/models      # listează modele
 nvidia-smi                                # utilizare GPU
 journalctl -u llama-server -f             # log-uri live
-docker logs -f open-webui                 # log-uri WebUI
 
 # ── ACCES ─────────────────────────────────────────────────────
 # llama.cpp   →  http://localhost:8080
