@@ -397,6 +397,7 @@ docker logs -f open-webui                 # log-uri WebUI
 
 Interfața built-in llama.cpp funcționează — primul prompt a primit răspuns cu o viteză de **10 token/s**, ceea ce confirmă că modelul rulează corect pe GPU.
 
-<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/ea40ba6b-d61e-45f1-9ca7-10cb7e492087" />
+![2026-03-08 16-44-38 (online-video-cutter com)](https://github.com/user-attachments/assets/352d1cdd-8476-44d1-b3ba-647d4a59b2f1)
+
 
 ---
