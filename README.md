@@ -146,7 +146,7 @@ LLAMA_CACHE=~/models llama-server \
              --threads 8 \
              --parallel 2
 ```
-![[Pasted image 20260308154417.png]]
+<img width="876" height="594" alt="image" src="https://github.com/user-attachments/assets/a005f5f0-c74c-4388-99f2-0e819cc312fe" />
 
 ---
 
@@ -167,7 +167,8 @@ llama-server \
   --parallel 2
 ```
 
-![[Pasted image 20260308162607.png]]
+<img width="876" height="594" alt="image" src="https://github.com/user-attachments/assets/73204b84-5150-4768-8239-4e9421a8bfa7" />
+
 
 ### 5.2. Explicația parametrilor
 
@@ -215,7 +216,7 @@ curl http://localhost:8080/health
 # Output: {"status":"ok"}
 ```
 
-![[Pasted image 20260308162154.png|697]]
+<img width="441" height="50" alt="image" src="https://github.com/user-attachments/assets/e536a94f-5a9d-4198-b049-4af236d91f15" />
 
 
 ```
@@ -223,7 +224,8 @@ curl http://localhost:8080/health
 curl http://localhost:8080/v1/models | python3 -m json.tool
 ```
 
-![[Pasted image 20260308162220.png|695]]
+<img width="868" height="375" alt="image" src="https://github.com/user-attachments/assets/d0041ca6-cb1e-477c-a82d-40937a77ac50" />
+
 
 ### 5.5. Rulare ca serviciu systemd
 
@@ -395,6 +397,6 @@ docker logs -f open-webui                 # log-uri WebUI
 
 Interfața built-in llama.cpp funcționează — primul prompt a primit răspuns cu o viteză de **10 token/s**, ceea ce confirmă că modelul rulează corect pe GPU.
 
-![[2026-03-08 16-44-38 (online-video-cutter.com).gif]]
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/ea40ba6b-d61e-45f1-9ca7-10cb7e492087" />
 
 ---
