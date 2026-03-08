@@ -6,16 +6,16 @@
 
 ## Cuprins
 
- [[#1. Ce este un LLM?]]
- [[#2. Specificații Hardware]]
- [[#3. Instalare llama.cpp]]
- [[#4. Descărcare Model GGUF]]
- [[#5. Pornire Server llama.cpp]]
- [[#6. Optimizare pentru coding]]
- [[#7. Troubleshooting]]
- [[#8. Modele Alternative]]
- [[#9. Cheat Sheet]]
- [[#10. Test]]
+1. [[#1. Ce este un LLM?]]
+2. [[#2. Specificații Hardware]]
+3. [[#3. Instalare llama.cpp]]
+4. [[#4. Descărcare Model GGUF]]
+5. [[#5. Pornire Server llama.cpp]]
+6. [[#6. Optimizare pentru coding]]
+7. [[#7. Troubleshooting]]
+8. [[#8. Modele Alternative]]
+9. [[#9. Cheat Sheet]]
+10. [[#10. Test]]
 
 ---
 
